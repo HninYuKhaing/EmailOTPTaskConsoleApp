@@ -27,7 +27,7 @@ After 1 minute, entering OTP is not allowed.
 
 Future Enhancements
 -------------------
-Concurrency Handling for multiple users
-Error Logging for monitoring and logging
+Concurrency Handling for multiple users<br/>
+Error Logging for monitoring and logging<br/>
 Localization for email content to support multiple languages
 
