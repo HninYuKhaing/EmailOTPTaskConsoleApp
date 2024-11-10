@@ -20,8 +20,6 @@ namespace EmailOTPModuleLibrary
             otpService = new OTPService();
         }
 
-        private string currentOTP;
-
         public void Start()
         {
             // Optional to implement
@@ -44,7 +42,7 @@ namespace EmailOTPModuleLibrary
                 return EmailOTPStatus.STATUS_EMAIL_INVALID;
             }
 
-            currentOTP = otpService.GenerateOTP();
+            string currentOTP = otpService.GenerateOTP();
 
             string emailBody = $"Your OTP Code is {currentOTP}. The code is valid for 1 minute.";
             Console.WriteLine(emailBody);
